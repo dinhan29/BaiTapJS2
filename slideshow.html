@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide</title>
+	<style type="text/css">
+		img {
+			max-width: 500px;
+		}
+	</style>
+
+</head>
+<body>
+	
+		<h3> Slide Show</h3>
+		<a href="">
+			<img id="img" src="https://static.wikia.nocookie.net/rapviet/images/a/a6/1943730511048453396148922485565439851607806n-1539093548702491665680.jpg/revision/latest?cb=20190301151651&path-prefix=vi" alt="" >
+		</a>
+		<h4 id="caption">Amee-1</h4>
+	
+<script type="text/javascript" >
+	function slide()
+{
+	var index=0;
+	changeImage= function()
+	{
+		var imgs=["https://static.wikia.nocookie.net/rapviet/images/a/a6/1943730511048453396148922485565439851607806n-1539093548702491665680.jpg/revision/latest?cb=20190301151651&path-prefix=vi","https://kenh14cdn.com/thumb_w/640/2020/2020-photo-1-1584423411189203497718-140-0-598-733-crop-1584423779236-637200472688929296.jpg","https://static2.yan.vn/YanNews/2167221/201911/amee-gay-tranh-cai-voi-phat-ngon-ve-top-treding-youtube-8aaf11a7.jpg"];
+		var captions=["Amee-1","Amee-2", "Amee-3"];
+		document.getElementById('img').src=imgs[index];
+		document.getElementById('caption').innerHTML=captions[index];
+		index++;
+		if(index==3)
+		{
+			index=0;
+		}
+	}
+	setInterval(changeImage,1000);
+}
+slide();
+</script>
+</body>
+</html>
